@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project1.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <!-- Font Awesome Link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Amazon</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.nav_bar {
+    height: 90px;
+    width: 100%;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+   
+}
+
+.nav_logo {
+    width: 120px;
+    height: 89px;
+}
+
+.logo {
+    background-image: url(lo1.webp);
+    height: 89px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.rest {
+     
+     width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 89px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rest div {
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.rest div:hover {
+    background-color: orange;
+    color: white; 
+    cursor: pointer; 
+}
+.icon {
+    display: none;
+}
+
+@media screen and (max-width: 524px) {
+    .rest {
+        display: none;
+    }
+    .icon {
+       
+        display: inline;
+        justify-content: flex-end;
+
+        color: orange;
+        position: fixed; 
+        top: 30px; 
+        right: 10px; 
+        font-size: 2rem;
+        cursor: pointer;
+        text-align: center;
+      }
+      .icon:hover {
+        border: solid 2px blueviolet;
+        border-radius: 5px;
+        
+      }
+  }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav_bar">
+            <div class="nav_logo">
+                <div class="logo">
+
+                </div>
+            </div>
+                <div class="rest">
+                <div class="r1">Home</div>
+                <div class="r2">Our Team</div>
+                <div class="r3">Impact</div>
+                <div class="r4">Accomplishments</div>
+                <div class="r5">FAQ</div>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-square-poll-horizontal"></i>
+                </div>
+        </div>
+    </header>
+    <script>
+        
+    </script>
+</body>
+</html>
